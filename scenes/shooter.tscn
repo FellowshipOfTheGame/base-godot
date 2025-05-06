@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://mbal80n0mk7g"]
+
+[ext_resource type="Script" uid="uid://bn357sd375s4x" path="res://scripts/shooter.gd" id="1_gt117"]
+
+[node name="Shooter" type="RigidBody2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_gt117")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(-20, 0)
+scale = Vector2(7, 7)
+polygon = PackedVector2Array(0, -13, -13, 0, 0, 0)
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+position = Vector2(20, 0)
+rotation = -3.14159
+scale = Vector2(7, -7)
+polygon = PackedVector2Array(0, -13, -13, 0, 0, 0)
+
+[node name="Polygon2D3" type="Polygon2D" parent="."]
+position = Vector2(0, 6)
+polygon = PackedVector2Array(8.00002, -80, 16, -72, 24, -48, 16, -24, 8.00002, -16, -8.00001, -16, -16, -24, -24, -48, -16, -72, -8.00001, -80)
+uv = PackedVector2Array(0, -80, 16, -64, 24, -40, 16, -16, 6.02124, -6.64493, 0, -1, -16, -16, -24, -40, -16, -64, -6.11295, -73.887)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-20, -91, 21, -91, 111, 0, -111, 0)

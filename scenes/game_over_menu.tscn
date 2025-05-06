@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgmwai3603ajd"]
+
+[ext_resource type="Script" uid="uid://cpojgelxuwm7l" path="res://scripts/game_over_menu.gd" id="1_6ebp1"]
+
+[node name="GameOverMenu" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6ebp1")
+
+[node name="Restart" type="Button" parent="."]
+offset_left = 551.0
+offset_top = 385.0
+offset_right = 616.0
+offset_bottom = 416.0
+text = "Restart"
+
+[node name="Menu" type="Button" parent="."]
+offset_left = 551.0
+offset_top = 446.0
+offset_right = 616.0
+offset_bottom = 477.0
+text = "Menu"
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 549.0
+offset_top = 503.0
+offset_right = 614.0
+offset_bottom = 534.0
+text = "Sair"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 468.0
+offset_top = 309.0
+offset_right = 698.0
+offset_bottom = 349.0
+text = "Game Over"
+horizontal_alignment = 1
+vertical_alignment = 1

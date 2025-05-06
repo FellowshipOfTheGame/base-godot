@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c50pib0sp3tuh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6k2ms"]
+
+[sub_resource type="Gradient" id="Gradient_rugbh"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(1, 1, 1, 1)
+metadata/_snap_count = 2
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_d8j31"]
+gradient = SubResource("Gradient_rugbh")
+width = 40
+height = 40
+
+[node name="StaticBlock" type="StaticBody2D"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_6k2ms")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_d8j31")
